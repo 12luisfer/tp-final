@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="stylesheet" href="./assets/css/animacion.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel=" icon" href="./assets/img/logo.ico">
+    <title>Luan</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#browser"><img src="./assets/img/luan_logo.png" alt="Logo de la empresa"></a>
+
+        <div class="menu-label">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav class="navbar">
+            <ul class="navbar-links">
+                <li><a href="#browser">Inicio</a></li>
+                <li><a href="#hero">Servicios</a></li>
+                <li><a href="#products-container">Productos</a></li>
+                <li><a href="#contact">Contactanos</a></li>
+            </ul>
+        </nav>
+        <div class="header-log">
+            <buttom class="log-btn"><a href="./assets/html/login.html">Iniciar Sesión</a></buttom>
+            <buttom class="sign-btn"><a href="./assets/html/registro.html">Registrarme</a></buttom>
+        </div>
+
+        <div class="cart-label">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-bubble">-</span>
+        </div>
+
+        <div class="cart">
+            <h3>Tus Productos</h3>
+
+            <div class="cart-container">
+
+            </div>
+
+            <hr class="cart-hr">
+            <hr class="cart-hr">
+            <hr class="cart-hr">
+            <hr class="cart-hr">
+            <hr class="cart-hr">
+
+
+            <div class="cart-total">
+                <p>Total a pagar:</p>
+                <span class="total">$0</span>
+            </div>
+
+            <div class="cart-btn">
+                <button class="cart-btn-delete">borrar todo</button>
+                <button class="cart-btn-buy">Comprar</button>
+            </div>
+        </div>
+
+
+    </header>
+    <main class="main">
+        <section id="browser">
+            <div class="browser-title">
+                <h1>luan calzados</h1>
+                <img src="./assets/img/inicio.jpg" alt="banner">
+            </div>
+            <div class="browser-box">
+                <input type="text" class="browser-text" placeholder="¿Qué estás buscando?">
+                <button class="browser-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </section>
+
+        <section id="products-container">
+            <div class="products-title-p">
+                <h2>Productos mas vendidos</h2>
+            </div>
+            <div class="categories-container">
+                <div class="categories">
+                    <button class="category active">Todos</button>
+                    <button class="category" data-category="accessories">zapatillas</button>
+                    <button class="category" data-category="dress">tacos</button>
+                </div>
+            </div>
+            <div class="products-container-cards">
+            </div>
+            <button class="show-more">Ver Mas</button>
+        </section>
+        <section id="hero">
+            <div class="hero-info">
+                <h2>Nuestros servicios</h2>
+                <p>somos una empresa argentina con gran trayectoria en el mercado que constantemente innova para brindar
+                    calzados de calidad, moda, confort y diseños para cada momento. nuestros calzados son diseñados y
+                    desarrollados acorde con las nuevas tecnologías, contamos con un proceso de fabricación y control de
+                    calidad que nos permiten comercializar productos con alto valor para nuestros clientes.</p>
+                <div class="hero-card">
+                    <div class="hero-benefit">
+                        <h3>Envios nacionales
+                        </h3>
+                        <img src="./assets/img/servicios/fast-shipping-delivery-truck-flat-260nw-1908380944.webp"
+                            alt="imagen_envios">
+                        <p>Hacemos envios por todas partes del pais.En cuanto recibimos el pago, preparamos tu pedido
+                        </p>
+                    </div>
+                    <div class="hero-benefit">
+                        <h3>Moto mensajeria</h3>
+                        <img src="./assets/img/servicios/moto_Envio.webp" alt="imagen_moto">
+                        <p>Oferta en todos los envíos locales en entrega en el mismo día que se realiza el pago.</p>
+                    </div>
+                    <div class="hero-benefit">
+                        <h3>Metodos de pago</h3>
+                        <img src="./assets/img/servicios/tarjetas.jpg" alt="Imagen de pagos">
+                        <p>Aceptamos todo tipo de pagos(tarjeta debito,credito,mercado pago,transferencia y efectivo).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact-info">
+                <h2>Contáctanos</h2>
+
+
+
+                <div class="contact-info-all">
+                    <div class="contact-info-list">
+                        <div class="contact-info-social">
+                            <h3>Redes</h3>
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a> @Luan</li>
+                                <li><a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>1534569881</li>
+                                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a> @luan_ok</li>
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a> Luan calzados</li>
+                            </ul>
+                        </div>
+                        <div class="contact-info-ubication">
+                            <h3>ubicacion</h3>
+                            <ul>
+                                <li><a href="#"><i class="fa-solid fa-location-dot"></i></a>AV mitre 2578
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact-info-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.063403110946!2d-99.14359388886419!3d19.538891337201107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f73b24b84ad1%3A0xc819de4a4d77d7a2!2sOutlet%20de%20zapatos%20LUAN!5e0!3m2!1ses-419!2sar!4v1687964371236!5m2!1ses-419!2sar"
+                            width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <form id="form">
+                    <div class="form-text">
+                        <div class="form-data">
+
+                            <div class="form-field">
+                                <input type="text" id="name-input" placeholder="Nombre">
+                                <small></small>
+                            </div>
+
+                            <div class="form-field">
+                                <input type="text" id="lastname-input" placeholder="Apellido">
+                                <small></small>
+                            </div>
+
+                            <div class="form-field">
+                                <input type="email" id="email-input" placeholder="Correo">
+                                <small></small>
+                            </div>
+                            <div class="form-field">
+                                <input type="tel" id="tel-input" placeholder="telefono">
+                                <small></small>
+                            </div>
+
+                        </div>
+                        <div class="form-field">
+                            <textarea name="text" id="textarea" cols="30" rows="10"
+                                placeholder="Dejá tu consulta"></textarea>
+                            <small></small>
+                        </div>
+
+                    </div>
+                    <input type="submit" class="form-btn" value="Enviar Consulta">
+                </form>
+
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+    
+        <div class="footer-info">
+            <p>©luan calzados, 2023. Todos los derechos reservados.            </p>
+            <div class="footer-info-links">
+                <ul class="footer-info-icons">
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="active-modal">añadiste un producto al carrito!</div>
+    <div class="active-form-modal">en unos momentos nos estaremos comunicando con vos!.</div>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
