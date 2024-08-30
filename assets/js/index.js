@@ -483,3 +483,39 @@ const init = () => {
     textareaInput.addEventListener("input", () => checkTextArea(textareaInput))
 }
 init()
+// Función para realizar la búsqueda
+const searchProducts = (query) => {
+    // Convertir el texto de búsqueda a minúsculas para una comparación insensible a mayúsculas
+    const lowerCaseQuery = query.toLowerCase();
+
+    // Filtrar productos por nombre o precio
+    return productsData.filter(product => {
+        const productName = product.name.toLowerCase();
+        const productPrice = product.price.toString();
+
+        // Comprobar si la consulta coincide con el nombre o el precio del producto
+        return productName.includes(lowerCaseQuery) || productPrice.includes(lowerCaseQuery);
+    });
+};
+
+// Función para mostrar los productos filtrados
+const displaySearchResults = (products) => {
+    productsContainer.innerHTML = products.map(createProductTemplate).join("");
+};
+
+// Manejar la entrada de búsqueda
+const handleSearchInput = (e) => {
+    const query = e.target.value;
+    const results = searchProducts(query);
+    displaySearchResults(results);
+};
+
+// Agregar un listener para el input de búsqueda
+const searchInput = document.querySelector("#search-input");
+searchInput.addEventListener("input", handleSearchInput);
+
+
+
+
+
+
